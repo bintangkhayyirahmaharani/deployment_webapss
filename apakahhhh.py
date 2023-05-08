@@ -1,13 +1,13 @@
+import streamlit as st
+
 # Using "with" notation
 with st.sidebar:
     add_radio = st.radio(
         "Menu Utama",
         ("Home", "Perkenalan Kelompok", "Perhitungan Normalitas", "PerHitungan Kadar (%b/v)", "Perhitungan kadar (%b/b)")
     )
-	
-import streamlit as st
 
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 
 with col1:
    st.header("Normalitas dan Kadar")
